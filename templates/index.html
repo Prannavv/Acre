@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Acre</title>
+      <link rel="stylesheet" type="text/css" href="./static/main.css", media="screen,projection"/>
+      <link rel="icon" href="static/favicon.cc.png" type="image/gif" sizes="4x4">
+      <!--<link rel="stylesheet" type="text/css" href="./static/mycss2.css", media="screen,projection"/>-->
+   </head>
+   <body id="main">
+      <div id="body">
+          <nav>
+             <label class="logo">Acre</label>
+             <ul>
+            
+                 <li><a href="home.html">Home</a></li>
+                 <li><a href="about.html">About</a></li>
+                 <li><a href="contact.html">Contact</a></li>
+                 <li><a href="index.html">Predict</a></li>
+             </ul>
+         </nav>
+
+         <div class=form>
+            <form action="/predict" method="post">
+                <label id='one' class='select_label'>One storey building? </label>
+                <Select id='one_story' name='one_story'>
+                   <option value='1'>Yes</option>
+                   <option selected value="0" >No</option>
+                </Select>
+                <p></p>
+                <p></p>
+                <label class='select_label'>Two storey building? </label>
+                <Select id='two_story' name='two_story'>
+                   <option value='1'>Yes</option>
+                   <option selected value="0" >No</option>
+                </Select>
+                <p></p>
+                <label class='select_label'>Three story building? </label>
+                <Select id='three_story' name='three_story'>
+                   <option value='1'>Yes</option>
+                   <option selected value="0" >No</option>
+                </Select>
+                <p></p>
+               <label class='select_label'>Four story building? </label>
+               <Select id='four_story' name='four_story'>
+                  <option value='1'>Yes</option>
+                  <option selected value="0" >No</option>
+               </Select>
+               <p></p>
+               <label>Area:</label><br>
+               <input type="number" placeholder="Enter Lotsize here" id='lotsize' name='lotsize'><br>
+               <label>Number of Bedrooms :</label><p></p>
+               <input type="number" placeholder="No. of Bedrooms" id='bedrooms' name='bedrooms'><br>
+               <label>Number of Bathrooms :</label><p></p>
+               <input type="number" placeholder="No. of Bathrooms" id='bathrooms' name='bathrooms'><br>
+               <label class='select_label'>Want a Driveway? </label>
+               <Select id='driveway' name='driveway'>
+                  <option value='1'>Yes</option>
+                  <option selected value="0" >No</option>
+               </Select>
+               <p></p>  
+               <label class='select_label'>Want a recreational room? </label>
+               <Select id='recroom' name='recroom'>
+                  <option value='1'>Yes</option>
+                  <option selected value="0" >No</option>
+               </Select>
+               <p></p>
+               <label class='select_label'>Want a full basement?</label>
+               <Select id='fullbase' name='fullbase'>
+                  <option value='1'>Yes</option>
+                  <option selected value="0" >No</option>
+               </Select>
+               <p></p> 
+               <label class='select_label'>Looking for gas and hot water in the house?</label>
+               <Select id='gashw' name='gashw'>
+                  <option value='1'>Yes</option>
+                  <option selected value="0" >No</option>
+               </Select>
+               <p></p>
+               <label class='select_label'>Want air conditioning?</label>
+               <Select id='airco' name='airco'>
+                  <option value='1'>Yes</option>
+                  <option selected value="0" >No</option>
+               </Select>
+               <p></p>
+               <label>Number of Garages:</label>
+               <input type="number" placeholder="No. of Garage places" id='garpl' name='garpl'><br>
+               <label class='select_label'>Do you have a prefered area?</label>
+               <Select id='prefarea' name='prefarea'>
+                  <option value='1'>Yes</option>
+                  <option selected value="0" >No</option>
+               </Select>
+               <p></p>
+               <button id=submitbtn type="submit" value="Submit">Submit</button><br>
+            </form>
+         </div>
+         <div id=result>
+            <p> {{pred}}</p>
+         </div>
+      </div>
+   </body>
+</html>

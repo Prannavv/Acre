@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+#imp{
+    font-family: montserrat;
+    background-color: #f1faee;
+    border: 20px solid #457b9d;
+    margin: 0px;   
+}
+
+nav{
+    background: #a8dadc;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: #1d3557;
+    font-size: 50px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #1d3557;
+    font-size: 17px;
+    padding: 7px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a.hover{
+    background: white;
+    transition: .5s;
+}
+
+#this{
+    font-size: large;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#sql{
+    font-family: montserrat;
+    text-align: center;
+}
+
+#sub{
+    background-color: #e63946;
+    height: 40px;
+    width: 80px;
+    margin: 4px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+}

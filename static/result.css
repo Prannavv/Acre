@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+#lol{
+    font-family: montserrat;
+    background-color: #f1faee;
+    border: 20px solid #457b9d;
+    margin: 0px;   
+}
+
+nav{
+    background: #a8dadc;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: #1d3557;
+    font-size: 50px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #1d3557;
+    font-size: 17px;
+    padding: 7px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a.hover{
+    background: white;
+    transition: .5s;
+}
